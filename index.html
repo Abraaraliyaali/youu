@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Google Frontend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input[type="text"] {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .button-row {
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔍 Custom Google Frontend</h1>
+
+    <!-- Standard Google Search Form -->
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" placeholder="Search Google...">
+        <div class="button-row">
+            <input type="submit" value="Google Search">
+        </div>
+    </form>
+
+    <!-- Google Image Search Form -->
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" placeholder="Search Images...">
+        <input type="hidden" name="tbm" value="isch">
+        <div class="button-row">
+            <input type="submit" value="Image Search">
+        </div>
+    </form>
+
+    <!-- Google Advanced Search Link (optional) -->
+    <p>
+        <a href="https://www.google.com/advanced_search" target="_blank">Go to Google Advanced Search</a>
+    </p>
+
+</body>
+</html>
